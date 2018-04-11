@@ -1,0 +1,73 @@
+body{
+background-color: #232323;
+margin: 0; 
+font-family: "Avenir" , "Montserrat";
+}
+
+.square{
+width: 30%;
+background: purple;
+padding-bottom: 30%;
+float: left; /* have each sqaure side by side, starting from the right  */
+margin: 1.66%; /* equal spacing  inbetween each square  */
+border-radius: 50%;
+transition: background 1.0s;
+-webkit-transition: background 1.0s; /*broswe engine to support all broswers */
+-moz-transition: background 1.0s; /*supports mozilla firefox broswers */
+
+}
+
+#container{
+    margin: 20px auto; /*center the sqaures*/
+    max-width: 600px;
+}
+
+h1{
+    color: white;
+    background: steelblue;
+    text-align: center;
+    margin: 0; /*makes less spacing around the element */
+    font-weight: normal; /*less bolded text*/
+    text-transform: uppercase; /*making all the letters upercase */
+    line-height: 1.1; /*bringing all the text closer to each other vertically */
+    padding: 20px 0; /*top and bottom spacing */
+}
+
+#strip{
+    background: white;
+    height: 30%;
+    text-align:center;
+    color: black;
+}
+
+.selected{
+    background: steelblue;
+    color: white;
+}
+
+#displayColor {
+    font-size: 200%;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size:inherit;
+    transition: 1.00s; /*telling css how to animate transition with color or fontSize changes */
+    outline: none;
+}
+
+button:hover{
+    background: steelblue;
+    color: white;
+}
+
+#message{
+    display: inline-block;
+    width: 20%;
+}
